@@ -5,7 +5,6 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 @Entity
-
 public class Voiture {
 @Id
 private Integer id;
