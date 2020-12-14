@@ -21,4 +21,10 @@ public List<Voiture> lister()
 	return (List<Voiture>) vr.findAll();
 
 }
+
+public List<Voiture> listeModel(String model)
+{
+	
+return (List<Voiture>) vr.findByModel(model);
+}
 }
