@@ -17,6 +17,11 @@ public List<User>  findusername(String name)
 	//return ur.find
 return (List<User>)  ur.findByName(name);
 }
+public List<User> finduserordered(String name)
+{
+	
+return (List<User>) ur.findByNameOrderByNameDesc(name);
+}
 
 
 }

@@ -21,7 +21,11 @@ public List<Voiture> lister()
 	return (List<Voiture>) vr.findAll();
 
 }
+public List<Voiture> listerorder()
+{
+	return (List<Voiture>) vr.findAllByOrderByYearAsc();
 
+}
 public List<Voiture> listeModel(String model)
 {
 	

@@ -12,5 +12,6 @@ public interface UserRepository extends CrudRepository<User, Integer> {
 	List<User> findByBirthDateIsNull();
 	List<User> findByActiveTrue(); 
 	List<User> findByActiveFalse();
+	List<User> findByNameOrderByNameDesc(String name);
 
 }
