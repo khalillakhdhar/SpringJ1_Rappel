@@ -41,5 +41,12 @@ public List<Voiture> afficheBymodel(@PathVariable String model)
 	
 return vs.listeModel(model);
 }
+@GetMapping("/annee/{year}")
+public List<Voiture> affichebyDate(@PathVariable int year)
+{
+return vs.listeYeay(year);	
+
+}
+
 
 }

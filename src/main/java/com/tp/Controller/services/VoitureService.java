@@ -27,4 +27,9 @@ public List<Voiture> listeModel(String model)
 	
 return (List<Voiture>) vr.findByModel(model);
 }
+public List<Voiture> listeYeay(int year)
+{
+return (List<Voiture>) vr.findByYear(year);	
+
+}
 }
